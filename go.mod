@@ -1,4 +1,4 @@
-module builderdemo
+module github.com/holmeslin/builder-pattern-go
 
 go 1.24
 

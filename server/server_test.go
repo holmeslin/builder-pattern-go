@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"builderdemo/server"
+	"github.com/holmeslin/builder-pattern-go/server"
 )
 
 func ExampleBuilder() {

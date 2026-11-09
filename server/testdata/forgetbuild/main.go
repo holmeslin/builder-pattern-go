@@ -2,7 +2,7 @@
 // server_test.go 會確認編譯器真的擋下它。
 package main
 
-import "builderdemo/server"
+import "github.com/holmeslin/builder-pattern-go/server"
 
 func run(s *server.Server) {}
 

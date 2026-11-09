@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"builderdemo/options"
-	"builderdemo/server"
+	"github.com/holmeslin/builder-pattern-go/options"
+	"github.com/holmeslin/builder-pattern-go/server"
 )
 
 func Example_threeWays() {

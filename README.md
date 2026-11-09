@@ -12,6 +12,8 @@
 | github.com/Masterminds/squirrel | v1.5.4 |
 
 ```bash
+git clone https://github.com/holmeslin/builder-pattern-go
+cd builder-pattern-go
 go vet ./...
 go test ./...          # 全部
 go test -v ./server/   # 看「忘了 Build() 會編譯失敗」的編譯器輸出
@@ -32,8 +34,10 @@ go test -v ./server/   # 看「忘了 Build() 會編譯失敗」的編譯器輸�
 
 ## 用 ctorstat 拿團隊的真實數字(簡報 p.2)
 
+不用 clone,在自己的 repo 根目錄直接跑:
+
 ```bash
-go run ./cmd/ctorstat -min 5 /path/to/your/repo
+go run github.com/holmeslin/builder-pattern-go/cmd/ctorstat@latest -min 5 .
 ```
 
 列出:參數超過 5 個的 `New*` 函式、`*Builder` 型別、頂層 `With*` 函式。把數字填進簡報 p.2 的 `[__]`。
